@@ -1,4 +1,4 @@
-AI Resume Analyzer 🧑‍💼
+# AI Resume Analyzer 🧑‍💼
 A powerful tool built with Python, Streamlit, and the Google Gemini API to help job seekers tailor their resumes for specific job descriptions.
 
 (Note: Replace the image path above with a screenshot of your application)
