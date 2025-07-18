@@ -91,5 +91,4 @@ Upload Your Resume: Click the "Browse files" button to upload your resume in .pd
 
 Paste Job Description: Copy the full text of the job description you are targeting and paste it into the text area.
 
-Analyze: Click the "Analyze My Resume" button and wait for the AI to generate your detailed report.# AI-resume-analyzer
-# AI-resume-analyzer
+Analyze: Click the "Analyze My Resume" button and wait for the AI to generate your detailed report.
