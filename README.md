@@ -58,7 +58,7 @@ cd ai-resume-analyzer
 
 (Remember to replace `yourusername` with your actual GitHub username)
 
-**Create and Activate a Virtual Environment**
+**Create and Activate a Virtual Environment** (I personally not used vene for this aweb app)
 
 For Mac/Linux:
 
