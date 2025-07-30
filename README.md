@@ -3,7 +3,6 @@
 A powerful tool built with Python, Flask, and the Google Gemini API to help job seekers tailor their resumes for specific job descriptions.
 
 ![Prototype](static/images/prototype.png)
-(Note: Replace the image path above with a screenshot of your application)
 
 ## 🚀 Features
 
