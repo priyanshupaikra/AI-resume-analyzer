@@ -1,4 +1,9 @@
+Got it! You're swapping out Streamlit for Flask in your AI Resume Analyzer. This is a significant change, so the README.md needs to reflect that, especially in the "Tech Stack" and "How to Run Locally" sections.
+
+Here's a README.md file for your AI Resume Analyzer using Flask instead of Streamlit:
+
 AI Resume Analyzer 🧑‍💼
+(Note: Replace the image path above with a screenshot of your application)
 
 A powerful tool built with Python, Flask, and the Google Gemini API to help job seekers tailor their resumes for specific job descriptions.
 
