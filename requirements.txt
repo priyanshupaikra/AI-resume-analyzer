@@ -1,0 +1,6 @@
+Flask
+google-generativeai
+python-dotenv
+PyMuPDF
+python-docx
+Markdown
