@@ -4,9 +4,8 @@ A powerful tool built with Python, Flask, and the Google Gemini API to help job 
 
 ![Prototype](static/images/prototype.png)
 <<<<<<< HEAD
-(Note: Replace the image path above with a screenshot of your application)
 =======
->>>>>>> baa02d1f909981eee3b00b246510fbf079450d19
+
 
 ## 🚀 Features
 
@@ -110,4 +109,3 @@ Visit the URL provided in your terminal (usually http://127.0.0.1:5000) in your 
 - [ ] Visualize skill matches and gaps with charts and graphs.
 =======
 - [ ] Visualize skill matches and gaps with charts and graphs.
->>>>>>> baa02d1f909981eee3b00b246510fbf079450d19
