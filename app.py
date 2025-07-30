@@ -1,12 +1,11 @@
 import os
-import markdown  # To convert Markdown to HTML
+import markdown 
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
 import google.generativeai as genai
-import fitz  # PyMuPDF
-from docx import Document  # python-docx
+import fitz  
+from docx import Document 
 
-# --- FLASK AND API CONFIGURATION ---
 app = Flask(__name__)
 load_dotenv()
 
@@ -17,7 +16,6 @@ except Exception as e:
     print(f"Error configuring Gemini API: {e}")
     genai_model = None
 
-# --- BACKEND LOGIC FUNCTIONS ---
 def get_text_from_file(uploaded_file):
     text = ""
     file_extension = os.path.splitext(uploaded_file.filename)[1]
@@ -49,34 +47,33 @@ def get_analysis_report(resume_text, job_description_text):
     except Exception as e:
         return f"An error occurred while contacting the Gemini API: {e}"
 
-# --- FLASK ROUTES ---
+# flask routes
 @app.route('/', methods=['GET', 'POST'])
 def index():
     report_html = None
     if request.method == 'POST':
-        # Check if both files are provided
+
         if 'resume_file' not in request.files or not request.form.get('jd_text'):
             return render_template('index.html', report="Error: Please provide both a resume and a job description.")
 
         resume_file = request.files['resume_file']
         jd_text = request.form['jd_text']
 
-        # Check if a file was actually selected
         if resume_file.filename == '':
             return render_template('index.html', report="Error: Please select a resume file to upload.")
 
-        # Process the inputs
+        # inputs
         resume_text = get_text_from_file(resume_file)
         if resume_text:
             analysis_report_md = get_analysis_report(resume_text, jd_text)
-            # Convert the Markdown report from the AI to HTML
+   
             report_html = markdown.markdown(analysis_report_md)
         else:
             report_html = "<p class='text-danger'>Error: Could not read text from the uploaded file.</p>"
 
-    # For a GET request or after processing, render the page
+    # GET request or after processing
     return render_template('index.html', report=report_html)
 
-# --- RUN THE APP ---
+# running the app
 if __name__ == '__main__':
     app.run(debug=True)
